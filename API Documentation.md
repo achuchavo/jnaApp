@@ -1,9 +1,10 @@
-# jnaApp
-Team Jna App 
+# JnA REST API
 
-<h2>
+#### Error Message
+ If you encounter an error, the 'result' will return 'error' and there will be a 'message'
+ containing the error message.
+ 
   API Documention
-</h2>
 --------------
 1. LogIn
 
