@@ -1,7 +1,9 @@
 # jnaApp
 Team Jna App 
 
-API Documention
+<h2>
+  API Documention
+</h2>
 --------------
 1. LogIn
 
