@@ -1,8 +1,42 @@
 # JnA REST API
 
 #### Error Message
- If you encounter an error, the 'result' will return 'error' and there will be a 'message'
- containing the error message.
+ If you encounter an error, the `result` will return `error` and there will be a `message` member
+ returning the error message.
+ 
+ 
+| Message              | Meaning                            | 
+| -------------------- | ---------------------------------- | 
+| system error         | Invalid JSON                       | 
+| empty                | database returns empty record set  | 
+| connection failed    | connection to database failled     | 
+ 
+Error Code Example :
+
+```
+{
+    "result": "error",
+    "message": "system error"
+}
+```
+
+#### RPC Methods
+
+- [jnalogin](#jnalogin)
+- [jnajoin](#jnajoin)
+
+#### jnalogin
+
+#### rpc
+
+http://localhost:8080/jnalogin
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`aname`](`string`)}                  | user id (address)                                |
+| 2    | {[`apwd`](#Quantity)|`string`} | user password |
  
   API Documention
 --------------
