@@ -38,12 +38,5 @@ http://localhost:8080/jnalogin
 | 1    | {[`aname`](`string`)}                  | user id (address)                                |
 | 2    | {[`apwd`](#Quantity)|`string`} | user password |
  
-  API Documention
---------------
-1. LogIn
 
-2. Join
-
-LogIn API
-----------------
 
