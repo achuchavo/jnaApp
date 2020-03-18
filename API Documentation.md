@@ -36,7 +36,7 @@ http://211.54.245.8:8080/jnalogin
 | #    | Type                               | Description                                                  |
 | ---- | ---------------------------------- | ------------------------------------------------------------ |
 | 1    | {[`aname`](`string`)}                  | user id (address)                                |
-| 2    | {[`apwd`](#Quantity)|`string`} | user password |
+| 2    | {[`apwd`](`string`)} | user password |
 
 Raw Body Example
 ```
