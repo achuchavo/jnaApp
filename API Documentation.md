@@ -1,5 +1,5 @@
 # jnaApp
-Team Jna App Images
+Team Jna App 
 
 API Documention
 --------------
