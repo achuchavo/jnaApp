@@ -20,12 +20,12 @@ Error Code Example :
 }
 ```
 
-#### RPC Methods
+## RPC Methods
 
 - [jnalogin](#jnalogin)
 - [jnajoin](#jnajoin)
 
-#### jnalogin
+### jnalogin
 
 #### rpc
 
@@ -37,6 +37,15 @@ http://localhost:8080/jnalogin
 | ---- | ---------------------------------- | ------------------------------------------------------------ |
 | 1    | {[`aname`](`string`)}                  | user id (address)                                |
 | 2    | {[`apwd`](#Quantity)|`string`} | user password |
+
+Raw Body Example
+```
+{
+"aname" : "t080b15d896c896dc721714992da1f3205abb3aa20",
+"aspwd" : "acm",
+}
+```
+
  
 
 
