@@ -29,7 +29,7 @@ Error Code Example :
 
 #### rpc
 
-http://localhost:8080/jnalogin
+http://211.54.245.8:8080/jnalogin
 
 #### Parameters (Body)
 
@@ -55,7 +55,17 @@ Raw Body Example
 - {[`autovote`](#autovote)} - value returned is `YES` or `NO` 
 - {[`kakao`](#kakao)} - kakao id of user
 
-
+Result Body Example
+```
+{
+    "result": "success",
+    "id": "2171",
+    "address": "t080b15d896c896dc721714992da1f3205abb3aa20",
+    "telegram": "아츄",
+    "autovote": "YES",
+    "kakao": "chavo"
+}
+```
  
 
 
