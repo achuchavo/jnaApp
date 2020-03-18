@@ -46,7 +46,7 @@ Raw Body Example
 }
 ```
 
-#### Retunrs
+#### Returns
 
 - {[`result`](#result)} - value is `success` when data is returned
 - {[`id`](#id)} - unique id of user
