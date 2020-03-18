@@ -42,7 +42,7 @@ Raw Body Example
 ```
 {
 "aname" : "t080b15d896c896dc721714992da1f3205abb3aa20",
-"aspwd" : "acm",
+"apwd" : "acm",
 }
 ```
 
