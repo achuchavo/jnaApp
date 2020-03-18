@@ -46,6 +46,16 @@ Raw Body Example
 }
 ```
 
+#### Retunrs
+
+{[`result`](#result)} - value is `success` when data is returned
+{[`id`](#id)} - unique id of user
+{[`address`](#address)} - unique address of user
+{[`telegram`](#telegram)} - telegram username of user
+{[`autovote`](#autovote)} - value returned is `YES` or `NO` 
+{[`kakao`](#kakao)} - kakao id of user
+
+
  
 
 
