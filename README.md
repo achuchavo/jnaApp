@@ -40,7 +40,7 @@ Team Jna App Repository
 [Kakao Icon ](https://github.com/achuchavo/jnaApp/tree/master/ic_kakao)
 
 #### Go Back Icon
-[Sign Up Button Background ](https://github.com/achuchavo/jnaApp/tree/master/ic_join_back)
+[Go Back Button Background ](https://github.com/achuchavo/jnaApp/tree/master/ic_join_back)
 
 #### Input Background 
 [Input Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_input)
@@ -49,5 +49,5 @@ Team Jna App Repository
 [Sign Up Button Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_join_signup_button)
 
 #### Detail Button Background (자세히)
-[Sign Up Button Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_join_detail)
+[Detail Button Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_join_detail)
 
