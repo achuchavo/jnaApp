@@ -24,6 +24,7 @@ Error Code Example :
 
 - [jnalogin](#jnalogin)
 - [jnajoin](#jnajoin)
+- [jnajoinmessage](#jnajoinmessage)
 
 ### jnalogin
 
@@ -128,6 +129,27 @@ If address is invalid, result will show as below :
 {
     "result": "error",
     "message": "invalid address format"
+}
+```
+
+### jnajoinmessage
+
+#### rpc
+
+http://211.54.245.8:8080/jnajoinmessage
+
+#### Parameters (Body)
+
+none
+
+#### Returns
+
+- {[`message`](#message)} - returns texte
+
+Result Body Example
+```
+{
+   "message":"Line 1\n Line 2\n Line 3"
 }
 ```
  
