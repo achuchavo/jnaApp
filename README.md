@@ -34,10 +34,10 @@ Team Jna App Repository
 [Lock Icon ](https://github.com/achuchavo/jnaApp/tree/master/ic_login_lock)
 
 #### Telegram Icon 
-[Lock Icon ](https://github.com/achuchavo/jnaApp/tree/master/ic_telegram)
+[Telegram Icon ](https://github.com/achuchavo/jnaApp/tree/master/ic_telegram)
 
 #### Kakao Icon 
-[Lock Icon ](https://github.com/achuchavo/jnaApp/tree/master/ic_kakao)
+[Kakao Icon ](https://github.com/achuchavo/jnaApp/tree/master/ic_kakao)
 
 #### Go Back Icon
 [Sign Up Button Background ](https://github.com/achuchavo/jnaApp/tree/master/ic_join_back)
