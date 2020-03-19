@@ -144,7 +144,7 @@ none
 
 #### Returns
 
-- {[`message`](#message)} - returns texte
+- {[`message`](#message)} - returns text
 
 Result Body Example
 ```
