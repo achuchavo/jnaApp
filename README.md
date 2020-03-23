@@ -78,3 +78,33 @@ Team Jna App Repository
 #### Congratulations Image 
 [Congratulations Image  ](https://github.com/achuchavo/jnaApp/tree/master/ic_congrats)
 
+
+## HOME Page
+
+#### Home Background 
+[Home Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_home)
+
+#### State Background 
+[State Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_state)
+
+#### TTC Background 
+[TTC Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_ttc)
+
+#### Copy Background 
+[Copy Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_copy)
+
+#### JNA Reward Background 
+[Jna Reward ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_jnareward)
+
+#### History Background
+[History Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_history)
+
+#### Auto Voting Background 
+[Auto Voting Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_autovoting)
+
+#### Start Button Background
+[Start Button Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_start)
+
+#### Stop Button Background
+[Stop Button Background ](https://github.com/achuchavo/jnaApp/tree/master/HOME/bg_stop)
+
