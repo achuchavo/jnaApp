@@ -220,7 +220,7 @@ http://211.54.245.8:8080/jnavotestate
 | #    | Type                               | Description                                                  |
 | ---- | ---------------------------------- | ------------------------------------------------------------ |
 | 1    | {[`address`](`string`)}                  | user id (address - lenght = 42)                                |
-| 2    | {[`vote_status`](`string`)} | Vote Status (Value is Either `YES` or `No`) |
+| 2    | {[`vote_status`](`string`)} | Vote Status (Value is Either `YES` or `NO`) |
 
 Raw Body Example
 ```
@@ -239,7 +239,7 @@ Raw Body Example
 
 Result Body Example
 
-If user is successfully changes vote state, result will show as below :
+If user successfully changes vote state, result will show as below :
 ```
 {
     "result": "sucess",
