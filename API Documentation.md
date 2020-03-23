@@ -26,6 +26,7 @@ Error Code Example :
 - [jnajoin](#jnajoin)
 - [jnajoinmessage](#jnajoinmessage)
 - [jnahome](#jnahome)
+- [jnavotestate](#jnavotestate)
 
 ### jnalogin
 
@@ -207,5 +208,63 @@ Result Body Example
     "day_rate": "+0.1226%"
 }
 ``` 
+
+### jnavotestate
+
+#### rpc
+
+http://211.54.245.8:8080/jnavotestate
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (address - lenght = 42)                                |
+| 2    | {[`vote_status`](`string`)} | Vote Status (Value is Either `YES` or `No`) |
+
+Raw Body Example
+```
+{
+    "address": "t080b15d896c896dc721714992da1f3205abb3aa20",
+    "vote_status": "YES"
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`vote_status`](#vote_status)} - returns updated vote status - Value is Either `YES` or `No`
+- {[`pk_status`](#pk_status)} - Value is Either `YES` or `No`, `YES` if user agress to Use Private key
+- {[`message`](#message)} - other
+
+Result Body Example
+
+If user is successfully changes vote state, result will show as below :
+```
+{
+    "result": "sucess",
+    "vote_status": "YES",
+    "pk_status": "YES",
+    "message": ""
+}
+```
+
+If user didn't agree to use Private Key, result will show as below :
+```
+{
+    "result": "sucess",
+    "vote_status": "NO",
+    "pk_status": "NO",
+    "message": ""
+}
+```
+
+If vote_status is invalid, result will show as below :
+```
+{
+    "result": "error",
+    "message": "invalid status format"
+}
+```
 
 
