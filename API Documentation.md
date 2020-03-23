@@ -25,6 +25,7 @@ Error Code Example :
 - [jnalogin](#jnalogin)
 - [jnajoin](#jnajoin)
 - [jnajoinmessage](#jnajoinmessage)
+- [jnahome](#jnahome)
 
 ### jnalogin
 
@@ -152,6 +153,59 @@ Result Body Example
    "message":"Line 1\n Line 2\n Line 3"
 }
 ```
- 
+
+### jnahome
+
+#### rpc
+
+http://211.54.245.8:8080/jnahome
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (address - lenghth = 42)                                |
+
+Raw Body Example
+```
+{
+"address" : "t0bb44599fd077db0e7b38e7fd19a6299454181269"
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`ttc`](#ttc)} - curreent user's TTC balance
+- {[`yesterday`](#yesterday)} - previous day rewards
+- {[`yesterday_rate`](#yesterday_rate)} - previous day reward rate
+- {[`month`](#month)} - current month reward 
+- {[`month_rate`](#month_rate)} - current month reward rate
+- {[`total`](#total)} - total reward
+- {[`total_rate`](#total_rate)} - total reward rate
+- {[`vote_status`](#vote_status)} - current vote status of user, value returned is `YES` or `NO`
+- {[`hour_gain`](#hour_gain)} - previous hour voting reward
+- {[`hour_rate`](#hour_rate)} - previous hour voting reward rate
+- {[`day_gain`](#day_gain)} - previous 24 hour reward
+- {[`day_rate`](#day_rate)} - previous 24 hour reward rate
+
+Result Body Example
+```
+{
+    "result": "success",
+    "ttc": "84,781",
+    "yesterday": "+42",
+    "yesterday_rate": "+.0495%",
+    "month": "+980%",
+    "month_rate": "+1.1559%",
+    "total": "+4,340",
+    "total_rate": "+5.1185%",
+    "vote_status": "YES",
+    "hour_gain": "2.071",
+    "hour_rate": "+0.0024%",
+    "day_gain": "103.981",
+    "day_rate": "+0.1226%"
+}
+``` 
 
 
