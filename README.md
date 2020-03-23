@@ -28,6 +28,21 @@ Team Jna App Repository
 [Login Button Background ](https://github.com/achuchavo/jnaApp/tree/master/login_button_backgournd)
 
 
+## PopUp Page
+
+#### Close Button 
+[Pop Up Close ](https://github.com/achuchavo/jnaApp/tree/master/ic_popup_close)
+
+#### Scroll Button
+[Pop Uo Scroll ](https://github.com/achuchavo/jnaApp/tree/master/ic_popup_scroll)
+
+#### Scroll Background
+[Pop Up Scroll Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_popup_scroll)
+
+#### Pop Up Background
+[Pop Up Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_popup)
+
+
 ## Join Page
 
 #### Logo 
@@ -56,4 +71,10 @@ Team Jna App Repository
 
 #### Detail Button Background (자세히)
 [Detail Button Background ](https://github.com/achuchavo/jnaApp/tree/master/bg_join_detail)
+
+
+## Congratulations Page
+
+#### Congratulations Image 
+[Congratulations Image  ](https://github.com/achuchavo/jnaApp/tree/master/ic_congrats)
 
