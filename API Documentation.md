@@ -338,6 +338,15 @@ If private key already exist, result will show as below :
 }
 ```
 
+If private key format is invalid :
+```
+{
+    "result": "error",
+    "message": "invalid key format 63",
+    "key": "547cf0c4d131b0ff766eb9d08aa093d5305face024293c590e0ddc8f70899cc"
+}
+```
+
 ### jnahistory
 
 #### rpc
