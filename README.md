@@ -130,3 +130,12 @@ Team Jna App Repository
 [Side Menu Profile Button ](https://github.com/achuchavo/jnaApp/tree/master/HOME/ic_sidemenu_profile)
 
 
+## History Page
+
+#### History Background 
+[History Background  ](https://github.com/achuchavo/jnaApp/tree/master/HISTORY/bg_history)
+
+#### History Screenshot 
+[History Screenshot  ](https://github.com/achuchavo/jnaApp/tree/master/HISTORY/bg_screenshot)
+
+
