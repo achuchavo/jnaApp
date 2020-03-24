@@ -55,7 +55,8 @@ Raw Body Example
 - {[`id`](#id)} - unique id of user
 - {[`address`](#address)} - unique address of user
 - {[`telegram`](#telegram)} - telegram username of user
-- {[`autovote`](#autovote)} - value returned is `YES` or `NO` 
+- {[`vote_status`](#vote_status)} - value returned is `YES` or `NO` 
+- {[`pk_status`](#pk_status)} - value returned is `YES` or `NO` 
 - {[`kakao`](#kakao)} - kakao id of user
 
 Result Body Example
@@ -65,7 +66,8 @@ Result Body Example
     "id": "2171",
     "address": "t080b15d896c896dc721714992da1f3205abb3aa20",
     "telegram": "아츄",
-    "autovote": "YES",
+    "vote_status": "YES",
+    "pk_status": "YES",
     "kakao": "chavo"
 }
 ```
