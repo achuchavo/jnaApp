@@ -27,6 +27,9 @@ Error Code Example :
 - [jnajoinmessage](#jnajoinmessage)
 - [jnahome](#jnahome)
 - [jnavotestate](#jnavotestate)
+- [jnapkmessage](#jnapkmessage)
+- [jnaunlockpk](#jnaunlockpk)
+- [jnahistory](#jnahistory)
 
 ### jnalogin
 
@@ -268,5 +271,172 @@ If vote_status is invalid, result will show as below :
     "message": "invalid status format"
 }
 ```
+### jnapkmessage
 
+#### rpc
 
+http://211.54.245.8:8080/jnapkmessage
+
+#### Parameters (Body)
+
+none
+
+#### Returns
+
+- {[`message`](#message)} - returns text
+
+Result Body Example
+```
+{
+   "message":"Line 1\n Line 2\n Line 3"
+}
+```
+
+### jnaunlockpk
+
+#### rpc
+
+http://211.54.245.8:8080/jnaunlockpk
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`pk`](`string`)}                  | private key (length = 64)                                |
+
+Raw Body Example
+```
+{
+    "pk": "547cf0c4d131b0ff766eb9d08aa093d5305face024293c590e0ddc8f70899ccc"
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`vote_status`](#vote_status)} - Value is Either `YES` or `No`
+- {[`pk_status`](#pk_status)} - Value is Either `YES` or `No`, `YES` if private key was successfully imported
+- {[`message`](#message)} - message 
+
+Result Body Example
+
+If private key is successfully registered, result will show as below :
+```
+{
+    "result": "sucess",
+    "vote_status": "YES",
+    "pk_status": "YES",
+    "message": ""
+}
+```
+
+If private key already exist, result will show as below :
+```
+{
+    "result": "error",
+    "message": "account already exists"
+}
+```
+
+### jnahistory
+
+#### rpc
+
+http://211.54.245.8:8080/jnahistory
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (ttc address)                                |
+
+Raw Body Example
+```
+{
+    "address": "t0bb44599fd077db0e7b38e7fd19a6299454181269"
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`airdrop_sum`](#airdrop_sum)} - Airdrop Total
+- {[`lotto_sum`](#lotto_sum)} - Lotto Total
+- {[`reward_sum`](#reward_sum)} - Reward Total
+- {[`join_date`](#join_date)} - Start Date 
+- {[`count`](#count)} - Number of days 
+- {[`history`](#history)} - history array containing keys `date` , `airdrop`, `lotto`, `total`
+
+Result Body Example
+
+If restult returns values then:
+```
+{
+    "result": "success",
+    "airdrop_sum": "3,479.50 TTC",
+    "lotto_sum": "940.00 TTC",
+    "reward_sum": "4,419.50 TTC",
+    "join_date": "2019.07.10",
+    "count": "105 일",
+    "history": [
+        {
+            "date": "2020.03.09",
+            "airdrop": "40 TTC",
+            "lotto":"2등 1개 100 TTC 
+","total":"140.000 TTC"},{"date":"2020.02.26","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.02.25","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.02.23","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.02.20","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.02.19","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.02.14","airdrop":"28 TTC","lotto":"3등 1개 30 TTC 
+4등 1개 15 TTC 
+","total":"73.000 TTC"},{"date":"2020.02.13","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.11","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.10","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.08","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.07","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.06","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.04","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.02.02","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.01.29","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
+","total":"43.000 TTC"},{"date":"2020.01.27","airdrop":"25 TTC","lotto":"3등 1개 30 TTC 
+","total":"54.500 TTC"},{"date":"2020.01.26","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
+","total":"39.500 TTC"},{"date":"2020.01.25","airdrop":"25 TTC","lotto":"3등 1개 30 TTC 
+","total":"54.500 TTC"},{"date":"2020.01.24","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
+","total":"39.500 TTC"},{"date":"2020.01.23","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
+","total":"39.500 TTC"},{"date":"2020.01.22","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
+","total":"39.500 TTC"},{"date":"2020.01.19","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
+","total":"39.500 TTC"},{"date":"2020.01.17","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.01.16","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
+4등 1개 15 TTC 
+","total":"85.000 TTC"},{"date":"2020.01.14","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.01.13","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.01.12","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.01.09","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.01.08","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
+","total":"70.000 TTC"},{"date":"2020.01.06","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
+","total":"70.000 TTC"},{"date":"2020.01.03","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2020.01.02","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
+4등 1개 15 TTC 
+","total":"85.000 TTC"},{"date":"2020.01.01","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
+","total":"55.000 TTC"},{"date":"2019.12.31","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
+4등 1개 15 TTC 
+","total":"85.000 TTC"},{"date":"2019.07.27","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
+","total":"36.000 TTC"},{"date":"2019.07.26","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
+","total":"36.000 TTC"},{"date":"2019.07.24","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
+","total":"36.000 TTC"},{"date":"2019.07.19","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
+","total":"36.000 TTC"},{"date":"2019.07.16","airdrop":"21 TTC","lotto":"2등 1개 30 TTC 
+3등 1개 15 TTC 
+","total":"66.000 TTC"},{"date":"2019.07.14","airdrop":"21 TTC","lotto":"3등 1개 15 TTC 
+","total":"36.000 TTC"},{"date":"2019.07.13","airdrop":"21 TTC","lotto":"3등 1개 15 TTC 
+","total":"36.000 TTC"},{"date":"2019.07.12","airdrop":"21 TTC","lotto":"3등 1개 15 TTC 
+","total":"36.000 TTC"}]}
+```
+
+If result doesn't return values :
+```
+{
+    "result": "error",
+    "message": "empty"
+}
+```
