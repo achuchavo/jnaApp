@@ -379,58 +379,26 @@ If restult returns values then:
     "join_date": "2019.07.10",
     "count": "105 일",
     "history": [
-        {
-            "date": "2020.03.09",
-            "airdrop": "40 TTC",
-            "lotto":"2등 1개 100 TTC 
-","total":"140.000 TTC"},{"date":"2020.02.26","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.02.25","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.02.23","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.02.20","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.02.19","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.02.14","airdrop":"28 TTC","lotto":"3등 1개 30 TTC 
-4등 1개 15 TTC 
-","total":"73.000 TTC"},{"date":"2020.02.13","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.11","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.10","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.08","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.07","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.06","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.04","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.02.02","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.01.29","airdrop":"28 TTC","lotto":"4등 1개 15 TTC 
-","total":"43.000 TTC"},{"date":"2020.01.27","airdrop":"25 TTC","lotto":"3등 1개 30 TTC 
-","total":"54.500 TTC"},{"date":"2020.01.26","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
-","total":"39.500 TTC"},{"date":"2020.01.25","airdrop":"25 TTC","lotto":"3등 1개 30 TTC 
-","total":"54.500 TTC"},{"date":"2020.01.24","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
-","total":"39.500 TTC"},{"date":"2020.01.23","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
-","total":"39.500 TTC"},{"date":"2020.01.22","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
-","total":"39.500 TTC"},{"date":"2020.01.19","airdrop":"25 TTC","lotto":"4등 1개 15 TTC 
-","total":"39.500 TTC"},{"date":"2020.01.17","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.01.16","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
-4등 1개 15 TTC 
-","total":"85.000 TTC"},{"date":"2020.01.14","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.01.13","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.01.12","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.01.09","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.01.08","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
-","total":"70.000 TTC"},{"date":"2020.01.06","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
-","total":"70.000 TTC"},{"date":"2020.01.03","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2020.01.02","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
-4등 1개 15 TTC 
-","total":"85.000 TTC"},{"date":"2020.01.01","airdrop":"40 TTC","lotto":"4등 1개 15 TTC 
-","total":"55.000 TTC"},{"date":"2019.12.31","airdrop":"40 TTC","lotto":"3등 1개 30 TTC 
-4등 1개 15 TTC 
-","total":"85.000 TTC"},{"date":"2019.07.27","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
-","total":"36.000 TTC"},{"date":"2019.07.26","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
-","total":"36.000 TTC"},{"date":"2019.07.24","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
-","total":"36.000 TTC"},{"date":"2019.07.19","airdrop":"21 TTC","lotto":"4등 1개 15 TTC 
-","total":"36.000 TTC"},{"date":"2019.07.16","airdrop":"21 TTC","lotto":"2등 1개 30 TTC 
-3등 1개 15 TTC 
-","total":"66.000 TTC"},{"date":"2019.07.14","airdrop":"21 TTC","lotto":"3등 1개 15 TTC 
-","total":"36.000 TTC"},{"date":"2019.07.13","airdrop":"21 TTC","lotto":"3등 1개 15 TTC 
-","total":"36.000 TTC"},{"date":"2019.07.12","airdrop":"21 TTC","lotto":"3등 1개 15 TTC 
-","total":"36.000 TTC"}]}
+                {
+                  "date": "2020.03.09",
+                  "airdrop": "40 TTC",
+                  "lotto":"2등 1개 100 TTC ",
+                  "total":"140.000 TTC"
+                },
+               {
+                  "date":"2020.02.26",
+                  "airdrop":"40 TTC",
+                  "lotto":"4등 1개 15 TTC ",
+                  "total":"55.000 TTC"
+                },
+                {
+                  "date":"2020.02.25",
+                  "airdrop":"40 TTC",
+                  "lotto":"4등 1개 15 TTC ",
+                  "total":"55.000 TTC"
+                  }
+              ]
+}
 ```
 
 If result doesn't return values :
