@@ -4,6 +4,11 @@ Team Jna App Repository
 ## JnA REST API Documentation
 [JNA RPC](https://github.com/achuchavo/jnaApp/blob/master/API%20Documentation.md)
 
+## Loading Page
+
+#### Load Gif 
+[Load Gif ](https://github.com/achuchavo/jnaApp/tree/master/loading)
+
 ## LogIn Page
 
 #### Logo 
