@@ -271,6 +271,16 @@ If vote_status is invalid, result will show as below :
     "message": "invalid status format"
 }
 ```
+
+If User doesn't have enough balance :
+```
+{
+    "result": "error",
+    "message": "insufficent funds",
+    "ttc": "95"
+}
+```
+
 ### jnapkmessage
 
 #### rpc
@@ -303,11 +313,13 @@ http://211.54.245.8:8080/jnaunlockpk
 | #    | Type                               | Description                                                  |
 | ---- | ---------------------------------- | ------------------------------------------------------------ |
 | 1    | {[`pk`](`string`)}                  | private key (length = 64)                                |
+| 2    | {[`address`](`string`)}                  | ttc address (length = 42)                                |
 
 Raw Body Example
 ```
 {
-    "pk": "547cf0c4d131b0ff766eb9d08aa093d5305face024293c590e0ddc8f70899ccc"
+    "pk": "547cf0c4d131b0ff766eb9d08aa093d5305face024293c590e0ddc8f70899ccc",
+    "address": "t080b15d896c896dc721714992da1f3205abb3aa20"
 }
 ```
 
@@ -344,6 +356,15 @@ If private key format is invalid :
     "result": "error",
     "message": "invalid key format 63",
     "key": "547cf0c4d131b0ff766eb9d08aa093d5305face024293c590e0ddc8f70899cc"
+}
+```
+
+If User doesn't have enough balance :
+```
+{
+    "result": "error",
+    "message": "insufficent funds",
+    "ttc": "95"
 }
 ```
 
