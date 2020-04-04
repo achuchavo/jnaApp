@@ -30,12 +30,15 @@ Error Code Example :
 - [jnapkmessage](#jnapkmessage)
 - [jnaunlockpk](#jnaunlockpk)
 - [jnahistory](#jnahistory)
+- [jnaupdatepwd](#jnaupdatepwd)
+- [jnaupdatekakao](#jnaupdatekakao)
+- [jnaupdatetelegram](#jnaupdatetelegram)
 
 ### jnalogin
 
 #### rpc
 
-http://211.54.245.8:8080/jnalogin
+http://ip:port/jnalogin
 
 #### Parameters (Body)
 
@@ -79,7 +82,7 @@ Result Body Example
 
 #### rpc
 
-http://211.54.245.8:8080/jnajoin
+http://ip:port/jnajoin
 
 #### Parameters (Body)
 
@@ -143,7 +146,7 @@ If address is invalid, result will show as below :
 
 #### rpc
 
-http://211.54.245.8:8080/jnajoinmessage
+http://ip:port/jnajoinmessage
 
 #### Parameters (Body)
 
@@ -164,7 +167,7 @@ Result Body Example
 
 #### rpc
 
-http://211.54.245.8:8080/jnahome
+http://ip:port/jnahome
 
 #### Parameters (Body)
 
@@ -218,7 +221,7 @@ Result Body Example
 
 #### rpc
 
-http://211.54.245.8:8080/jnavotestate
+http://ip:port/jnavotestate
 
 #### Parameters (Body)
 
@@ -285,7 +288,7 @@ If User doesn't have enough balance :
 
 #### rpc
 
-http://211.54.245.8:8080/jnapkmessage
+http://ip:port/jnapkmessage
 
 #### Parameters (Body)
 
@@ -306,7 +309,7 @@ Result Body Example
 
 #### rpc
 
-http://211.54.245.8:8080/jnaunlockpk
+http://ip:port/jnaunlockpk
 
 #### Parameters (Body)
 
@@ -372,7 +375,7 @@ If User doesn't have enough balance :
 
 #### rpc
 
-http://211.54.245.8:8080/jnahistory
+http://ip:port/jnahistory
 
 #### Parameters (Body)
 
@@ -438,3 +441,200 @@ If result doesn't return values :
     "message": "empty"
 }
 ```
+
+
+### jnaupdatepwd
+
+#### rpc
+
+http://ip:port/jnaupdatepwd
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (ttc address)                                |
+| 2    | {[`oldpwd`](`string`)}                  | user password (old)                                |
+| 3    | {[`newpwd`](`string`)}                  | user password (new)                               |
+
+Raw Body Example
+```
+{
+    "address": "t0bb44599fd077db0e7b38e7fd19a6299454181269",
+    "oldpwd": "myoldpassword",
+    "newpwd": "mynewpassword"  
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`message`](#message)} - messaged related to result
+
+Result Body Example
+
+If restult returns `success` then:
+```
+{
+    "result": "success",
+    "message": "Password Updated!"
+}
+```
+
+If result doesn't return values :
+
+Error Type 1
+```
+{
+    "result": "error",
+    "message": "현재 비밀번호를 확인 하세요!"
+}
+```
+
+Error Type 2
+```
+{
+    "result": "error",
+    "message": "Failed to Connect to DB!"
+}
+```
+
+Error Type 3
+```
+{
+    "result": "error",
+    "message": "system Error!"
+}
+```
+
+
+### jnaupdatekakao
+
+#### rpc
+
+http://ip:port/jnaupdatekakao
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (ttc address)                                |
+| 2    | {[`oldkakao`](`string`)}                  | kakao id (old)                                |
+| 3    | {[`newkakao`](`string`)}                  | kakao id (new)                               |
+
+Raw Body Example
+```
+{
+    "address": "t0bb44599fd077db0e7b38e7fd19a6299454181269",
+    "oldkakao": "myoldkakao",
+    "newkakao": "mynewkakao"  
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`message`](#message)} - messaged related to result
+
+Result Body Example
+
+If restult returns `success` then:
+```
+{
+    "result": "success",
+    "message": "KakaoID Updated!"
+}
+```
+
+If result doesn't return values :
+
+Error Type 1
+```
+{
+    "result": "error",
+    "message": "현재 Kakao ID 확인 하세요!"
+}
+```
+
+Error Type 2
+```
+{
+    "result": "error",
+    "message": "Failed to Connect to DB!"
+}
+```
+
+Error Type 3
+```
+{
+    "result": "error",
+    "message": "system Error!"
+}
+```
+
+
+### jnaupdatetelegram
+
+#### rpc
+
+http://ip:port/jnaupdatetelegram
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (ttc address)                                |
+| 2    | {[`oldtelegram`](`string`)}                  | telegram name (old)                                |
+| 3    | {[`newtelegram`](`string`)}                  | telegram name  (new)                               |
+
+Raw Body Example
+```
+{
+    "address": "t0bb44599fd077db0e7b38e7fd19a6299454181269",
+    "oldtelegram": "myoldtelegram",
+    "newtelegram": "mynewtelegram"  
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`message`](#message)} - messaged related to result
+
+Result Body Example
+
+If restult returns `success` then:
+```
+{
+    "result": "success",
+    "message": "Telegram Name Updated!"
+}
+```
+
+If result doesn't return values :
+
+Error Type 1
+```
+{
+    "result": "error",
+    "message": "현재 Telegram 이름 확인 하세요!"
+}
+```
+
+Error Type 2
+```
+{
+    "result": "error",
+    "message": "Failed to Connect to DB!"
+}
+```
+
+Error Type 3
+```
+{
+    "result": "error",
+    "message": "system Error!"
+}
+```
+
+
