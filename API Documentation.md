@@ -656,7 +656,7 @@ Raw Body Example
 ```
 {
 "address" : "t080b15d896c896dc721714992da1f3205abb3aa20",
-"apwd" : "userpassword",
+"apwd" : "userpassword"
 }
 ```
 
