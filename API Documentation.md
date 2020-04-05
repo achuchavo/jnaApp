@@ -33,6 +33,7 @@ Error Code Example :
 - [jnaupdatepwd](#jnaupdatepwd)
 - [jnaupdatekakao](#jnaupdatekakao)
 - [jnaupdatetelegram](#jnaupdatetelegram)
+- [jnadeleteuser](#jnadeleteuser)
 
 ### jnalogin
 
@@ -634,6 +635,63 @@ Error Type 3
 {
     "result": "error",
     "message": "system Error!"
+}
+```
+
+
+### jnadeleteuser
+
+#### rpc
+
+http://ip:port/jnadeleteuser
+
+#### Parameters (Body)
+
+| #    | Type                               | Description                                                  |
+| ---- | ---------------------------------- | ------------------------------------------------------------ |
+| 1    | {[`address`](`string`)}                  | user id (address)                                |
+| 2    | {[`apwd`](`string`)} | user password |
+
+Raw Body Example
+```
+{
+"address" : "t080b15d896c896dc721714992da1f3205abb3aa20",
+"apwd" : "userpassword",
+}
+```
+
+#### Returns
+
+- {[`result`](#result)} - value is `success` when data is returned
+- {[`message`](#id)} - message related to result
+
+Result Body Example if Deleted
+```
+{
+ {
+    "result": "success",
+    "message": "Account Deleted!"
+}
+}
+```
+
+Result Body Example if Credentials are invalid
+```
+{
+ {
+    "result": "error",
+    "message": "Verify Account/Password!"
+}
+}
+```
+
+Result Body Example if Connection to Database fails
+```
+{
+ {
+    "result": "error",
+    "message": Connection failed"
+}
 }
 ```
 
